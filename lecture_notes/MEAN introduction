@@ -1,0 +1,85 @@
+cs5610\lecture_examples\dev_env
+
+Task one: install node js
+
+what is node.js?
+
+Node.js is an open-source, cross-platform runtime environment for developing server-side web applications.
+Node.js applications are written in JavaScript.
+It allows executing JavaScript programs on desktop machines. 
+It is commonly used to create server side networking applications. 
+In this course Node.js will be used to implement HTTP servers that will host HTML content and RESTful Web services.
+
+1. download node js and install from https://nodejs.org/en/
+2. write a hello.js (console.log("hello");) file and run it via node from windows cmd
+
+
+Task two: using npm
+
+what is npm?
+npm is the default Package manager for the JavaScript runtime environment Node.js
+
+1. initializing Node.js projects:
+-- visiting https://www.npmjs.com/, there are many frameworks.
+2. initializing node.js package
+-- on cmd window do npm init
+-- package.json is the standard name of NPM
+
+https://docs.nodejitsu.com/articles/getting-started/npm/what-is-npm
+
+
+Task three: setting up openshift
+1. visit https://www.openshift.com/
+2. create account on openshift and create a nodejs application
+3. install openshift client tools 
+https://developers.openshift.com/en/getting-started-windows.html#client-tools
+
+Step 1: Install Ruby with RubyInstaller
+(http://rubyinstaller.org/downloads/)
+Step 2: Install Git version control
+(https://git-for-windows.github.io/)
+Step 3: Install the rhc Ruby gem
+(C:\> gem install rhc)
+
+4. generate the key C:\> rhc setup
+4.1 git clone ssh:key
+4.2 npm install (install the express dependencies)
+4.3 change local index.html file
+4.4 create .gitigore file by c:> echo node_modules > .gitignore
+4.5 git add . // git commit -am "change index.html" // git push origin
+
+5 change server.js file to use express
+http://expressjs.com/
+
+6. run c:> node server.js to show how to use localhost
+7. demo changes on localhost and openshift
+
+
+-- git  add <filename>
+-- git rm --cached <filename>
+-- git commit -am "changes to openshift"
+-- git push origin
+
+
+Task four: setting up git account
+1. create account in https://github.com/
+2. download and install git client: https://git-scm.com/download/win
+
+
+Task five: setup github remote for local changes
+1. add github remote repo: git remote add github <git-hub url>
+2. git push -u github master
+
+
+Conclusion
+JavaScript is a language written for websites to run in the client’s browser.
+
+AJAX is a way for JavaScript to request data from a server without refreshing the page or blocking the application.
+
+jQuery is a JavaScript library built to automate and simplify common web tasks like AJAX or animation.
+
+Angular is a hip JavaScript framework which is made for building large, single-page web applications.
+
+Node.js allows JavaScript to be run without a browser, and is commonly used to run web servers.
+
+A single-page application (SPA) is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience akin to a desktop application.

@@ -1,0 +1,32 @@
+1. Mongo DB installation
+2. Webstorm installation
+3. Any questions about Piazza
+4. Any questions about assignment 1
+
+User Interface Development 
+Part One: HTML & CSS & Responsive Design
+
+1. Introduce html attributes
+href	--Specifies the URL (web address) for a link
+id		--Specifies a unique id for an element
+src		--Specifies the URL (web address) for an image
+style	--Specifies an inline CSS style for an element
+title	--Specifies extra information about an element (displayed as a tool tip)
+size	--Specifies the size of the image
+width 	--Specifies the width of the image
+height 	--Specifies the height of the image
+
+<html lang="en">
+<img src="w3schools.jpg" width="104" height="142">
+
+2. Introduce basic html tags, table, list(ol, ul, li), float, css, style in html
+
+
+Part Two: Boostrap Grid System & Boostrap Widgets
+1. download bootstrap
+2. introduce bootstrap classes such as col-lg, col-xs, and etc.
+3. introduce bower
+4. demo a bit more on large columns and small columns
+5. demo bootstrap forms 
+6. demo bootstrap tables and glyphicons
+

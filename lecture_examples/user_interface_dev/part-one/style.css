@@ -1,0 +1,21 @@
+.bgGreyFgWhite{
+    background-color: gray;
+    color:white;
+}
+h1{
+    color:firebrick;
+    background-color:forestgreen;
+}
+#main-heading{
+    color:blue;
+    background-color: royalblue;
+}
+ul{
+    background-color: gray;
+}
+ul ul{
+    background-color: aliceblue;
+}
+ul ul ul {
+    background-color:forestgreen;
+}
