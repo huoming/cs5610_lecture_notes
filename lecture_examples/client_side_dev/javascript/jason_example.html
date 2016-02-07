@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+
+<!--<button onclick="print()">JSON</button>
+
+<script>
+    function print(){
+        var alice = {
+            first: "Alice",
+            last: "Wonderland",
+            salary: 100000
+        }
+        var bob = {
+            first: "Bob",
+            last: "Marley"
+        }
+
+        document.writeln("first: " + alice.first);
+        document.writeln("last: " + alice.last);
+
+        document.writeln(bob.salary);
+    }
+</script>-->
+<h1>IIFE</h1>
+<p>Scope</p>
+<script>
+    //var foo = "foo";
+    (function(){
+        var foo = "inner";
+        console.log(foo);
+    })();
+    console.log(foo);
+</script>
+
+
+<p id="message">Passing Arguments</p>
+<script>
+    (function(a, b)
+    {
+        var c = a+b;
+        var p = document.getElementById("message");
+        p.innerHTML = "hello: " + c.toString();
+
+    })(2, 3);
+</script>
+
+</body>
+</html>

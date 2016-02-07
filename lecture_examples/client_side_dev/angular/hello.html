@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="HelloWorldApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular - Hello World</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+
+<h1>Angular - Example</h1>
+<div class="container" ng-controller="HelloWorldController">
+    {{hello}}
+    <div class="row">
+        <div class="container col-xs-6">
+            <button class="btn btn-primary" ng-click="print='hello world'">Print</button>
+            Print-{{print}}
+        </div>
+
+        <div class="col-xs-6">
+            <a href="#" class="btn btn-warning" ng-click="total = 2 + 3">Add 2 + 3</a>
+            2 + 3 = {{total}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <button class="btn btn-warning" ng-click="setLorem()">Set Lorem</button>
+            <p>{{lorem}}</p>
+        </div>
+
+        <div class="col-xs-6">
+            <button class="btn btn-success" ng-click="add(2,3)">Add 2 + 3</button>
+            2 + 3 = {{result}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-6">
+            <h2>Model Bound to Template</h2>
+            <input ng-model="title" class="form-control"/>
+            <h3>Title: {{title}}</h3>
+        </div>
+
+        <div class="col-xs-6">
+            <input ng-model="name" class="form-control"/>
+            <button class="btn btn-submit btn-block" ng-click="setAuthor(name)"> Set Author </button>
+            <h3>Author: {{theAuthor}}</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

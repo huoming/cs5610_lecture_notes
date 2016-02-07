@@ -2,12 +2,163 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Introdcution</title>
+    <style>
+        #small{
+            width: 300px;
+            /*float: left;*/
+        }
+    </style>
+    <style>
+        #p1{
+            background-color: deepskyblue;
+            width: 500px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            /*z-index: 0;*/
+        }
+        #p2{
+            background-color: green;
+            width: 500px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            /*z-index: 1;*/
+        }
+        #p3{
+            background-color: brown;
+            width: 500px;
+            height: 100px;
+            overflow: hidden;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+           /* z-index: 2;*/
+        }
+    </style>
+
+   <!-- <link href="style.css" rel="stylesheet">
+    <link href="myStyle.css" rel="stylesheet">-->
+    <!--<link href="../bootstrap-3.3.6-dist/css/bootstrap.css" rel="stylesheet">-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel= "stylesheet">
+
 </head>
 <body>
-<li>Anchor</li>
-<li>List</li>
-<li>Float</li>
-<li>Block</li>
+<h1> Anchor </h1>
+<li><a href="anchor.html">Home</a></li>
+<li><a href="profile.html"> Profile</a></li>
+<li><a href="users.html">Users</a></li>
+
+<h1>List</h1>
+<ul class="blue">
+    <li>item one</li>
+    <li>item two</li>
+    <li>item three</li>
+    <ul>
+        <li>item one small</li>
+        <li>item two small</li>
+    </ul>
+</ul>
+
+<ol class="change_color">
+    <li>item one</li>
+    <li>item two</li>
+    <li>item three</li>
+    <ol>
+        <li>item one</li>
+        <li>item two</li>
+        <li>item three</li>
+    </ol>
+</ol>
+
+<h1>Blocks</h1>
+<h2>Blocks</h2>
+<h3>Blocks</h3>
+<p id="small" class="blue">
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishi
+</p>
+<b>Lorem Ipsum </b>
+
+<h1>Float</h1>
+
+<p class="change_color">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishi
+</p>
+
+
+<h1>Table example</h1>
+<table class="table table-striped">
+    <tbhead>
+        <tr>
+            <th>Title</th>
+            <th>Section</th>
+            <th>Seats</th>
+            <th>Start Date</th>
+        </tr>
+    </tbhead>
+    <tbody>
+    <tr>
+        <td rowspan="2">Java</td>
+        <td>1</td>
+        <td>100</td>
+        <td>01/10/2016</td>
+    </tr>
+    <tr>
+        <!--<td>Java</td>-->
+        <td>1</td>
+        <td>100</td>
+        <td>01/10/2016</td>
+    </tr>
+    <tr>
+        <td>C#</td>
+        <td>1</td>
+        <td>100</td>
+        <td>01/10/2016</td>
+    </tr>
+    <tr>
+        <td>F#</td>
+        <td>1</td>
+        <td>100</td>
+        <td>01/10/2016</td>
+    </tr>
+    </tbody>
+    </table>
+
+<div class="col-lg">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+
+<div class="col-sm">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+
+<div class="col-xs">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+<div class="container-fluide">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+
+<h1>Z-index</h1>
+
+<p id="p1">
+    BLUE-- Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+<p id="p2">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</p>
+
+<p id="p3">
+    RED---Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+
+
 </body>
 </html>

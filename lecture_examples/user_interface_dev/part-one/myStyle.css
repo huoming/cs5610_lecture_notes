@@ -1,0 +1,15 @@
+.change_color{
+    background-color: #00b3ee;
+}
+.blue{
+    background-color: blue;
+}
+
+p{
+    width: 600px;
+    /*float: left;*/
+}
+h1{
+    color:firebrick;
+    background-color: #7a43b6;
+}
