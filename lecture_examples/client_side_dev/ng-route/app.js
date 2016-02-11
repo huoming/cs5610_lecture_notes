@@ -15,5 +15,10 @@
                 .otherwise({
                     redirectTo: "/"
                 });
+        })
+        .controller("NavController", function($scope, $location){
+            $scope.$location = $location;
         });
 })();
+
+

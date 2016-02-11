@@ -16,6 +16,7 @@ function HelloWorldController($scope) {
     }
 
     $scope.setAuthor = function(author){
+        console.log("set author!");
         $scope.theAuthor = author;
     }
 }
