@@ -1,23 +1,27 @@
 (function(){
     angular
-        .module("WhiteBoardApp", ["ngRoute"])
+        .module("RouteApp", ["ngRoute"])
         .config(function($routeProvider){
             $routeProvider
                 .when("/home", {
-                    templateUrl: "home.html"
+                    templateUrl: "home/home.html"
                 })
                 .when("/profile", {
                     templateUrl: "profile.html"
+                })
+                .when("/helloP",{
+                    templateUrl: "home.html"
                 })
                 .when("/admin", {
                     templateUrl: "admin.html"
                 })
                 .otherwise({
-                    redirectTo: "/"
+                    redirectTo: "/home.html"
                 });
         })
-        .controller("NavController", function($scope, $location){
-            $scope.$location = $location;
+       .controller("NavControllerTwo", function($scope, $location){
+           console.log("I am at: " + $location.url);
+           $scope.$location = $location;
         });
 })();
 

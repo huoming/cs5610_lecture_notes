@@ -9,7 +9,6 @@
         .directive("helloWorld", helloWorld);
 
     function CustomersController($scope){
-        var counter = 0;
         $scope.customer = {
             name: 'David',
             street: '1234 Anywhere St.'
@@ -18,7 +17,8 @@
 
     function helloWorld(){
         return {
-            template: 'Name: {{customer.name}}<br /> Street: {{customer.street}}'
+            /*template: 'Name: {{customer.name}}<br /> Street: {{customer.street}}'*/
+            template: "helloWorld!"
         };
     }
 })();

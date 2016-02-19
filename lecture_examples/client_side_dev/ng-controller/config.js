@@ -1,6 +1,6 @@
 (function(){
     angular
-        .module("WhiteBoardApp")
+        .module("RouteExampleApp")
         .config(function($routeProvider){
             $routeProvider
                 .when("/", {

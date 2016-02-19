@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="WhiteBoardApp">
+<html lang="en" ng-app="RouteApp">
 <head>
     <meta charset="UTF-8">
     <title>ng-route</title>
@@ -8,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-route.js"></script>
+
     <script src="app.js"></script>
 
 </head>
@@ -16,24 +17,26 @@
 <div class="container">
     <h1>Ng Route</h1>
 
-    <a href="#/home" class="btn btn-primary">Home</a>
-    <a href="#/profile" class="btn btn-success">Profile</a>
+    <a href="home/home.html">Home</a>
+
+    <a href="/home" class="btn btn-primary">Home</a>
+    <a href="#/helloP">Profile</a>
     <a href="#/admin" class="btn btn-danger">Admin</a>
 
     <hr/>
-
+    <h1>See ng view below</h1>
     <div ng-view></div>
     <hr/>
 
 </div>
-
 <div class="container">
-    <nav ng-controller="NavController">
-        <a href="#/home"  class="btn " ng-class="{'btn-primary' : $location.url() == '/home'}">Home</a>
+    <nav ng-controller="NavControllerTwo">
+        <a href="#/home"  class="btn " ng-class="{'active' : $location.url().indexOf('home')!=-1}">Home</a>
         <a href="#/profile" class="btn" ng-class="{'btn-primary' : $location.url() == '/profile'}">Profile</a>
         <a href="#/admin"   class="btn" ng-class="{'btn-primary' : $location.url() == '/admin'}">Admin</a>
         <br/>
         {{$location.url()}}
+        <h1>See ng view below</h1>
         <div ng-view></div>
     </nav>
 </div>

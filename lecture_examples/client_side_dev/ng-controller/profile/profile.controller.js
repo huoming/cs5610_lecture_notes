@@ -1,8 +1,12 @@
 (function(){
     angular
-        .module("WhiteBoardApp")
-        .controller("ProfileController", ProfileController);
-    function ProfileController($scope) {
-        $scope.profileHello = "Hello from ProfileController"
-    }
+        .module("RouteExampleApp")
+        //.controller("ProfileController", ProfileController);
+        .controller("ProfileController", function($scope){
+            $scope.profileHello = "Hello from ProfileController"
+        });
+
+    /*function ProfileController($scope) {
+     $scope.profileHello = "Hello from ProfileController"
+     }*/
 })();

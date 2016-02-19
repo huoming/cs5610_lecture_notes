@@ -1,8 +1,9 @@
 (function(){
     angular
-        .module("WhiteBoardApp")
-        .controller("HomeController", HomeController);
-    function HomeController($scope) {
+        .module("RouteExampleApp")
+        .controller("HomeController", HomeControllerTwo);
+
+    function HomeControllerTwo($scope) {
         $scope.homeHello = "Hello from HomeController"
     }
 })();

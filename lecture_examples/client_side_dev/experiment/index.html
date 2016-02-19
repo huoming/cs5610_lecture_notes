@@ -1,33 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="WhiteBoardApp">
 <head>
     <meta charset="UTF-8">
-    <title>Experiment-jQuery</title>
+    <title>Angular Introduction</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/vader/jquery-ui.css"/>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
 
+    <script src="app.js"></script>
 </head>
 <body>
 
-<h1>jQuery Init</h1>
+<div class="container">
+    <h1>Movie List</h1>
+    <table class="table" ng-controller="MovieTableController">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Description</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <td><input class="form-control" ng-model="movie.id"/></td>
+            <td><input class="form-control" ng-model="movie.title"/></td>
+            <td><input class="form-control" ng-model="movie.year"/></td>
+            <td><input class="form-control" ng-model="movie.description"/></td>
+            <td><button class="btn btn-primary" ng-click="addMovie(movie)">Add</button> </td>
+            <td><button class="btn btn-primary" ng-click="updateMovie(movie)">Update</button> </td>
+        </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in movies">
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.year}}</td>
+                <td>{{item.description}}</td>
+                <td><button class="btn btn-info" ng-click="delMovie($index)">Delete</button> </td>
+                <td><button class="btn btn-success" ng-click="selMovie(item, $index)">Select</button> </td>
+            </tr>
+            <tr ng-repeat="item in test_items">
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.year}}</td>
+                <td>{{item.description}}</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
 
-<h2>Simple Click Event</h2>
-<button class="btn btn-primary" id="clickBtn">Hello World</button>
-
-<div id="appendMe">Hello World</div>
-<hr/>
-
-<!--<input type="text" id="movieTitle" class="form-control">-->
-
-<input type="text" id="movieTitle" class="form-control" placeholder="Terminator"/>
-<button class="btn btn-submit btn-block" id="searchMovie">Search</button>
-
-<span class="glyphicon glyphicon-remove" style="visibility:hidden;"></span>
+</div>
 
 </body>
 </html>
