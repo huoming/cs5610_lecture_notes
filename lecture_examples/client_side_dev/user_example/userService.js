@@ -2,7 +2,7 @@
 {
     angular
         .module("UserApp")
-        .factory("UserService", userService);
+        .factory("UserServices", userService);
 
     function userService()
     {
@@ -12,12 +12,12 @@
             {username: "Charlie"},
         ];
 
-        var service = {
+        var services = {
             findAllUsers : findAllUsers,
             findUserById : findUserById
         };
 
-        return service;
+        return services;
 
         function findAllUsers()
         {

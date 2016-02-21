@@ -1,7 +1,7 @@
 // app.js
 (function(){
     angular
-        .module("TemplateUrlBindData", ["jgaTable"])
+        .module("TemplateUrlBindData", ["ngRoute", "jgaTable"])
         .controller("tableController", function($scope){
 
             // declare user array containing user object instances

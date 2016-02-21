@@ -6,7 +6,7 @@
     angular
         .module("HelloWorldDirective", [])
         .controller("CustomersController", CustomersController)
-        .directive("helloWorld", helloWorld);
+        .directive("helloWorldExample", helloWorld);
 
     function CustomersController($scope){
         $scope.customer = {
@@ -17,8 +17,9 @@
 
     function helloWorld(){
         return {
-            /*template: 'Name: {{customer.name}}<br /> Street: {{customer.street}}'*/
-            template: "helloWorld!"
+            template: 'Name: {{customer.name}} <br /> Street: {{customer.street}} -- from directive'
+
+            /*template: "helloWorldhelloWorldhelloWorldhelloWorldhelloWorldhelloWorld!"*/
         };
     }
 })();

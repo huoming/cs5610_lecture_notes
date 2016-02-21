@@ -2,8 +2,8 @@
 {
     angular
         .module("UserApp")
-        .controller("userController", function UserController($scope, UserService)
+        .controller("userController", function UserController($scope, UserServices)
         {
-            $scope.users = UserService.findAllUsers();
+            $scope.users = UserServices.findAllUsers();
         });
 })();

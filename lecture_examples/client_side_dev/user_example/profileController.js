@@ -4,10 +4,10 @@
         .module("UserApp")
         .controller("profileController", profileController);
 
-    function profileController($scope, $routeParams, $location, UserService)
+    function profileController($scope, $routeParams, $location, UserServices)
     {
-        $scope.id = $routeParams.id;
-        $scope.user = UserService.findUserById($routeParams.id);
+        $scope.id = $routeParams.num;
+        $scope.user = UserServices.findUserById($routeParams.id);
 
         $scope.$location = $location;
         console.log("profile controller: " + $location.url());

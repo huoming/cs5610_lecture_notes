@@ -13,7 +13,7 @@
                         templateUrl: "users.html",
                         controller: "userController"
                     })
-                .when("/profile/:id",
+                .when("/profile/:num",
                     {
                         templateUrl: "profile.html",
                         controller: "profileController"
