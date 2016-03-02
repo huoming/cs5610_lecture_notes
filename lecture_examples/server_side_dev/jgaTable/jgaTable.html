@@ -1,0 +1,18 @@
+<!-- jgaTable.html -->
+<h2>{{caption}}</h2>
+<div class="table-responsive">
+    <table class="table table-striped" border="{{border}}">
+        <thead>
+        <th>Title</th>
+        <th>Seats</th>
+        <th>Start Date</th>
+        </thead>
+        <tbody>
+        <tr ng-repeat="course in data">
+            <td>{{course.title}}</td>
+            <td>{{course.seats}}</td>
+            <td>{{course.start}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

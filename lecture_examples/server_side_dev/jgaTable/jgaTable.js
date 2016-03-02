@@ -12,7 +12,7 @@
     function jgaTableExample() {
         return {
             scope: {
-                "caption": "=caption",
+                "caption": "=",
                 "border": "=",
                 "data": "="
             },
