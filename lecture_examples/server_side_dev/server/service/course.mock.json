@@ -1,0 +1,6 @@
+[
+  {"title": "Java 101", "seats": 12, "start": "3/2/2016"},
+  {"title": "Node.js 101", "seats": 12, "start": "2/3/2016"},
+  {"title": "C# 101", "seats": 12, "start": "3/9/2016"},
+  {"title": "ASP.NET 101", "seats": 12, "start": "3/10/2016"}
+]

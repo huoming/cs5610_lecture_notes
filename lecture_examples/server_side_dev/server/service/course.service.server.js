@@ -1,14 +1,11 @@
-module.exports=function(app){
-    //rest apis
-    var courses = [
-        {title: "Java 101", seats: 12, start: new Date()},
-        {title: "Node.js 101", seats: 12, start: new Date()},
-        {title: "C# 101", seats: 12, start: new Date(2016,9,18)},
-        {title: "ASP.NET 101", seats: 12, start: new Date(2016,1,19)},
-    ];
+module.exports = function(app){
 
+    //read the data from mock json file
+    var courses = require('./course.mock.json');
+
+    //rest apis
     app.get('/rest/course', function(req, res){
-        console.log("sending courses to client..");
+        console.log("after refactoring ----sending courses to client..");
         res.send(courses);
     });
 
