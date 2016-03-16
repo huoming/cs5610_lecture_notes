@@ -42,24 +42,3 @@ app.get("/getUsers/:index", function(req, res){
 
     res.send(users[index]);
 });
-
-
-
-/*
- app.get('/', function(req, res){
- res.send('hello world!');
- });
-
- app.get('/getData', function(req, res){
- var msg = {data:"hello data!"};
- res.send(msg);
- });
-
- app.get('/getUsers', function(req, res){
- var users = [
- {username: "Alex"},
- {username: "Bob"},
- {username: "Charlie"},
- ];
- res.send(users);
- });*/

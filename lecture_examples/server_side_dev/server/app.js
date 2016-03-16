@@ -1,4 +1,4 @@
-module.exports=function(app){
+module.exports=function(app, mongoose, db){
 
     //require("./service/user.service.server.js")(app);
     require("./service/course.service.server.js")(app);

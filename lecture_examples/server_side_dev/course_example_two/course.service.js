@@ -10,7 +10,7 @@
             getCourseById : getCourseById,
             createCourse : createCourse,
             deleteCourseById : deleteCourseById,
-            updateCourseById : updateCourseById,
+            updateCourseById : updateCourseById
         };
         return service;
 
