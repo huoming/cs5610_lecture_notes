@@ -2,7 +2,7 @@ var q = require("q");
 
 module.exports = function(mongoose, db){
 
-    var CourseSchema = require('./course.schema.js')(mongoose);
+    var CourseSchema = require('./course.schema.server.js')(mongoose);
     var courseModel = mongoose.model("courseModel", CourseSchema);
 
     var courses = require("./course.mock.json");
