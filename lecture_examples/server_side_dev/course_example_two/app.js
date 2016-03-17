@@ -3,24 +3,10 @@
         .module("CoursesApp", [])
         .controller("coursesController", function($scope, CourseService){
 
-            /*var courses = [
-                {title: "Java 101", seats: 12, start: new Date()},
-                {title: "Node.js 101", seats: 12, start: new Date()},
-                {title: "C# 101", seats: 12, start: new Date(2016,9,18)},
-                {title: "ASP.NET 101", seats: 12, start: new Date(2016,1,19)},
-            ];*/
-
-            /*$http
-                .get("/rest/course")
-                .success(function(response){
-                    $scope.courses = response;
+            CourseService.getAllCourses()
+                .then(function(response){
+                    $scope.courses=response;
                 });
-            */
-           /* $scope.courses = courses;*/
-            /*CourseService.getAllCourses(function(response){
-                $scope.courses=response;});*/
-
-            CourseService.getAllCourses(renderAllCourses);
 
             function renderAllCourses(all_courses){
                 $scope.courses=all_courses;
