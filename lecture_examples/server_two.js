@@ -31,7 +31,7 @@ var db = mongoose.connect(connection_string);
 
 app.listen(port, ipaddress);
 
-app.use(express.static(__dirname+'/database_dev'));
+app.use(express.static(__dirname+'/user_interface_dev');
 
 require("./database_dev/course_example/server/app.js")(app, mongoose, db);
 
